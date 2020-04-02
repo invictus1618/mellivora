@@ -35,8 +35,8 @@ Config::set('MELLIVORA_CONFIG_PATH_BASE', '/var/www/mellivora/');
 Config::set('MELLIVORA_CONFIG_SITE_LANGUAGE', 'en');
 
 // general site settings
-Config::set('MELLIVORA_CONFIG_SITE_NAME', 'Mellivora');
-Config::set('MELLIVORA_CONFIG_SITE_SLOGAN', 'Mellivora, the CTF engine');
+Config::set('MELLIVORA_CONFIG_SITE_NAME', 'tokyo kittens (toki)');
+Config::set('MELLIVORA_CONFIG_SITE_SLOGAN', 'TOKI underground kitten store');
 Config::set('MELLIVORA_CONFIG_SITE_DESCRIPTION', '');
 
 Config::set('MELLIVORA_CONFIG_SITE_URL', 'http://localhost/');

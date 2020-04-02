@@ -17,17 +17,17 @@ function print_submissions_left($challenge) {
 }
 
 function print_time_left($challenge) {
-    echo '<span data-countdown="', $challenge['available_until'],'">
-    ',lang_get(
-        'time_remaining',
-        array('time' => time_remaining($challenge['available_until']))
-    ), '
-    </span>';
+    //echo '<span data-countdown="', $challenge['available_until'],'">
+    //',lang_get(
+    //    'time_remaining',
+    //    array('time' => time_remaining($challenge['available_until']))
+    //), '
+    //</span>';
 }
 
 function print_time_left_tooltip($challenge) {
-    echo ' <span class="glyphicon glyphicon-time"></span> ';
-    print_time_left($challenge);
+    // echo ' <span class="glyphicon glyphicon-time"></span> ';
+    // print_time_left($challenge);
 }
 
 function print_submit_metadata($challenge) {

@@ -26,4 +26,5 @@ if (cache_start(CONST_CACHE_NAME_HOME, Config::get('MELLIVORA_CONFIG_CACHE_TIME_
     cache_end(CONST_CACHE_NAME_HOME);
 }
 
+
 foot();

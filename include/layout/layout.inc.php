@@ -42,6 +42,12 @@ function head($title = '') {
     }
 
 echo '
+
+<style> 
+body {
+  background-image: url("./img/tokyo.jpg");
+}
+</style>
 </head>
 
 <body>';
@@ -51,17 +57,21 @@ if (!user_is_logged_in()) {
 }
 
 echo '
-<div class="page">
+<div class="page" style="opacity: 0.96;">
     <nav class="header" id="header">
+
         <div id="header-inner">
-            <div id="header-logo">
+                <div id="header-toki-image"><img src="',Config::get('MELLIVORA_CONFIG_SITE_URL_STATIC_RESOURCES'),'img/tokiunderground4.png" style="width: 100%; padding-bottom: 10px;" </div>
+
+            <div id="header-logo" >
                 <a href="',Config::get('MELLIVORA_CONFIG_SITE_URL'),'">
-                    <h3 id="site-logo-text">',Config::get('MELLIVORA_CONFIG_SITE_NAME'),'</h3>
                     <div id="site-logo">
-                        <object data="'.Config::get('MELLIVORA_CONFIG_SITE_URL_STATIC_RESOURCES').'img/mellivora.svg" type="image/svg+xml"></object>
+                        <object data="'.Config::get('MELLIVORA_CONFIG_SITE_URL_STATIC_RESOURCES').'img/ramencat.png" type="image/png"></object>
                     </div>
+                    <h3 id="site-logo-text">',Config::get('MELLIVORA_CONFIG_SITE_NAME'),'</h3>
                 </a>
             </div>
+
             <div id="header-menu">
                 <ul class="nav nav-pills pull-right" id="menu-main">';
 
@@ -91,15 +101,15 @@ echo '
                         ';
                     }
                     echo '
-                </ul>
+                </ul>          
+
             </div>
         </div>
     </nav><!-- navbar -->
 
     <div class="container" id="body-container">
 
-        <div id="content-container">
-        ';
+        <div id="content-container">';
 
     if (isset($_GET['generic_success'])) {
         message_inline_green('<h3>'.lang_get('action_success').'</h3>', false);
@@ -119,16 +129,17 @@ function foot () {
 
 </div> <!-- /container -->
 
-<div id="footer">
+<div id="footer">    
     <div class="fade">
         <div id="footer-logo"/>
-            <object data="'.Config::get('MELLIVORA_CONFIG_SITE_URL_STATIC_RESOURCES').'img/mellivora.svg" type="image/svg+xml"></object>
+            <p><i><b>Pooh Bear Productions</b></i></p>
+            <object data="'.Config::get('MELLIVORA_CONFIG_SITE_URL_STATIC_RESOURCES').'img/poohbear.jpg" type="image/jpg"></object>
         </div>
-        <p>Powered by <a href="https://github.com/Nakiami/mellivora">Mellivora</a></p>
     </div>
 </div>
 
 </div> <!-- /page -->
+</div>
 
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
